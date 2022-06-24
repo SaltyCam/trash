@@ -46,14 +46,14 @@ const Menu = () => {
       
     
       let fetchData = () => {
-        Axios.get('http://localhost:3001/get',).then((res) =>{
+        Axios.get('https://localhost:3001/get',).then((res) =>{
           console.log(res.data);
           setCharacterData(res.data)
         })
       }
     
       let sendData = () => {
-        Axios.post('http://35.217.12.89:3001/post', {
+        Axios.post('https://35.217.12.89:3001/post', {
           clas: clas,
           level: level,
           circlet: circlet,
