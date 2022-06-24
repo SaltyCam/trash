@@ -97,7 +97,7 @@ const Menu = () => {
               setLevel(event.target.value)
             }}/>
             <label>Circlet:</label>
-            <input type="text" required onChange={(event)=> {
+            <input type="number" min={0} max={10} step={1} required onChange={(event)=> {
               setCirclet(event.target.value)
             }}/>
                         <label>Belt:</label>
