@@ -39,7 +39,7 @@ function App() {
   }
 
   let fetchData = () => {
-    Axios.get('http://localhost:3001/get',).then((res) =>{
+    Axios.get('http://35.217.12.89:3001/get',).then((res) =>{
       console.log(res.data);
       setCharacterData(res.data)
 

@@ -53,7 +53,7 @@ const Menu = () => {
       }
     
       let sendData = () => {
-        Axios.post('http://localhost:3001/post', {
+        Axios.post('http://35.217.12.89:3001/post', {
           clas: clas,
           level: level,
           circlet: circlet,
