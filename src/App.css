@@ -1,0 +1,107 @@
+.App {
+  max-width: 100vw;
+  width: 100%;
+  background: rgb(245, 244, 244);
+  margin: 5px auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.Inputs {
+  max-width: 80vw;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.all-inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.client-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.client-input2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-input input, label {
+  margin-left: 50px;
+}
+
+.client-input label {
+  text-align: left;
+}
+
+.client-input2 input, label {
+  margin-left: 50px;
+}
+
+.client-input2 label {
+  text-align: left;
+}
+
+input {
+  width: 100px;
+  height: 20px;
+}
+
+button {
+  max-width: fit-content;
+  margin: 10px auto;
+  
+}
+
+.result-table {
+  width: 100%;
+  background: lightgrey;
+}
+
+.result-table table {
+  width: 100%;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+td, th {
+  border: 1px solid black;
+  max-width: fit-content;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 2px;
+  position: relative;
+}
+
+td:hover::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 170, 170, 0.275);
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: 1;
+}
+
+table tr:not(:first-child):hover {
+  background-color: rgba(194, 31, 31, 0.249);
+}
+
+#brooches {
+  color: red;
+}
+
+#talismans {
+  color: blue;
+}
+
+#agathions {
+  color: green;
+}
+
