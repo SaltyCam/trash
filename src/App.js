@@ -4,6 +4,7 @@ import Axios from 'axios';
 import Menu from './Menu';
 import Button from './Button';
 
+
 function App() {
   // Character_details db
   let [clas, setClass] = useState('');
@@ -38,8 +39,10 @@ function App() {
     console.log(inputed);
   }
 
+  
+
   let fetchData = () => {
-    Axios.get('http://notsalty.eu:3001/get',).then((res) =>{
+    Axios.get('http://35.217.12.89:3001/get').then((res) =>{
       console.log(res.data);
       setCharacterData(res.data)
 
