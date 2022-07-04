@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Menu from './Menu';
+import TestFile from './Testfile';
 
 
 
@@ -14,6 +15,7 @@ root.render(
     <Routes>
       <Route path='/' element={<App/>}></Route>
       <Route path='/input_character' element={<Menu/>}></Route>
+      <Route path='/eva' element={<TestFile/>}></Route>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

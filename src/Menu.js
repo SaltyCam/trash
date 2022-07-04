@@ -44,14 +44,7 @@ const Menu = () => {
       let [characterData, setCharacterData] = useState();
       let [condition, setCondition] = useState();
       
-    
-      let fetchData = () => {
-        Axios.get('http://localhost:3001/get',).then((res) =>{
-          console.log(res.data);
-          setCharacterData(res.data)
-        })
-      }
-    
+  
       let sendData = () => {
         Axios.post('http://35.217.12.89:3001/post', {
           clas: clas,
